@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0047)http://saas.jingyingba.com/studentpage.html?517 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=1024, initial-scale=0.84 user-scalable=yes"> 
+<title>精英+</title>
+<script src="./精英+_files/laydate.js"></script><link type="text/css" rel="stylesheet" href="./精英+_files/laydate.css"><link type="text/css" rel="stylesheet" href="./精英+_files/laydate(1).css" id="LayDateSkin">
+<script src="./精英+_files/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="./精英+_files/excanvas.js"></script>
+<script src="./精英+_files/Chart.min.js"></script>
+<script src="./精英+_files/public.js"></script>
+<script src="./精英+_files/studentpage.js"></script>
+<link href="./精英+_files/public.css" rel="stylesheet">
+<link href="./精英+_files/studentpage.css" rel="stylesheet">
+<script type="text/javascript" src="./精英+_files/lama_common.js"></script>
+<script type="text/javascript" src="./精英+_files/lama_studentpage.js"></script>
+</head>
+
+<body style="min-width: 1220px;">
+<!--头部导航-->
+<div class="navhead">
+	<div class="navhead_left"><div class="logo"><img src="./精英+_files/logo-nav.png"></div><span>班级：SHH160707</span><em></em><span id="lecturer">当前技术讲师：李胜运</span><em></em><span id="mentor" planteachid="819">职业规划老师：王丹丹</span></div> 
+    <div class="navhead_right">
+    	<ul class="navhead_right_cont">
+        	<li id="weekly">周报</li><span></span>
+            <!--<li id="lecturer">讲师测评</li><span></span>
+            <li id="dutydiv">职规师测评</li><span></span>-->
+            <li id="getExam">获取知识点测试</li><span></span>
+            <li id="information">个人信息</li>
+        </ul>        
+        <ul class="logout">
+        	<p class="tui" onclick="logout()">退出</p>
+            <li><span class="xian"></span></li>
+            <li>
+            	<!--<a href="javascript:;"><img src="img/headpor.png" width="36" height="36" /></a>-->
+                <p id="peoInfo" onclick="javascript:stuonset();">周书娟<span class="ico1"></span></p>
+                <div class="perSet">
+                    <div class="perSetHd">
+                        <span class="sanS"></span>
+                    </div>
+                    <div class="perSetMa">
+                        <div class="perSetMaInfo"><p>学号：SHH160707-03</p><p>上次登录时间：<br>2016-07-28 08:25:12</p><p>上次登录IP地址：<br>112.64.30.170</p></div>
+                        <div class="perSetMaPsd">
+                            <div class="perSetMaPsdDiv">
+                                <h3>修改登陆密码</h3>
+                            </div>
+                            <div class="perSetMaPsdDiv">
+                                <h4>新的密码：</h4>
+                                <input type="password" value="" maxlength="12px">
+                            </div>
+                            <div class="perSetMaPsdDiv">
+                                <h4>确认密码：</h4>
+                                <input type="password" value="" maxlength="12px">
+                            </div>
+                            <div class="perSetMaPsdDiv perSetFoot">
+                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)" onclick="personSet()">关闭</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--头部导航-->
+<!--公共进度条部分-->
+<div class="common" style="display: block;">
+	<!--进度条-->
+    <div class="classProgress_cont">
+    	<div class="classProgress_top">
+        	<p>学科进度</p>
+            <div class="classProgress_left" style="width: 1205.45px;">
+            	<div class="classProgress">                    
+                <div class="classProgressGree" style="width: 11.6796px;"></div><span style="left:-0.4%"></span><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGree" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><span style="left:20.0%"></span><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><span style="left:50.1%"></span><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><span style="left:57.9%"></span><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><span style="left:71.4%"></span><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><span style="left:90.9%"></span><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><div class="classProgressGrey" style="width: 11.6796px;"></div><span class="last" style="left: 99.3361%;"></span></div>                
+                <div class="classProgress_bottom"><p on="" cid="44" uid="252" style="width: 245px;"><span class="on">HTML基础</span></p><p on="" cid="45" uid="0" style="width: 362px;"><span>JS原生+JQ</span></p><p on="" cid="46" uid="0" style="width: 94px;"><span>JS面向对象</span></p><p on="" cid="47" uid="0" style="width: 163px;"><span>后台开发及微信开发基础</span></p><p on="" cid="49" uid="0" style="width: 235px;"><span>综合项目</span></p><p on="" cid="50" uid="0" style="width: 102px;"><span>H5高级开发及混合编程</span></p></div>
+            </div>
+        </div>
+    </div>	
+	<!--进度条-->
+    
+    <!--课程进度-->
+    <div class="schedule">
+    	<p>课程进度</p>
+        <div class="schedule_cont"><div class="class" on="" jd="授课期" ct="1" day="21" tips="HTML基础" cid="44" style="display: block;"><a class="green active" did="1535" yes="0" no="1" stat="1" tips="开学典礼，入学考试，入学面谈" uid="252" js="李胜运"><i>1</i><span class="span1"></span></a><a class="green active" did="1536" yes="0" no="1" stat="1" tips="XHTML基础及模型盒" uid="252" js="李胜运"><i>2</i><span class="span1"></span></a><a class="green active" did="1537" yes="0" no="1" stat="1" tips="Xhtml扩展，常用标签" uid="252" js="李胜运"><i>3</i><span class="span1"></span></a><a class="green active" did="1538" yes="0" no="1" stat="1" tips="浮动ﬂoat" uid="252" js="李胜运"><i>4</i><span class="span1"></span></a><a class="green active" did="1539" yes="0" no="1" stat="1" tips="css定位" uid="252" js="李胜运"><i>5</i><span class="span1"></span></a><a class="green active" did="1540" yes="0" no="1" stat="1" tips="表格表单详解" uid="252" js="李胜运"><i>6</i><span class="span1"></span></a><a class="green active" did="1541" yes="0" no="1" stat="1" tips="网站布局、整站布局" uid="252" js="李胜运"><i>7</i><span class="span1"></span></a><a class="green active" did="1542" yes="0" no="1" stat="1" tips="印纷视觉前端制作及讲解" uid="252" js="李胜运"><i>8</i><span class="span1"></span></a><a class="green active" did="1543" yes="0" no="1" stat="1" tips="100度首页制作" uid="252" js="李胜运"><i>9</i><span class="span1"></span></a><a class="green active" did="1544" yes="0" no="1" stat="1" tips="100度首页制作及讲解" uid="252" js="李胜运"><i>10</i><span class="span1"></span></a><a class="green active" did="1545" yes="0" no="1" stat="1" tips="html和css语言考试" uid="252" js="李胜运"><i>11</i><span class="span1"></span></a><a class="grey active" did="1546" yes="0" no="1" stat="0" tips="响应式网站和移动端页面布局" uid="0" js="李胜运"><i>12</i><span class="span1"></span></a><a class="grey active" did="1547" yes="0" no="1" stat="0" tips="CSS基础属性" uid="0" js="李胜运"><i>13</i><span class="span1"></span></a><a class="grey active" did="1548" yes="0" no="1" stat="0" tips="CSS进阶属性" uid="0" js="李胜运"><i>14</i><span class="span1"></span><em class="em1"></em></a><a class="grey" did="1549" yes="0" no="1" stat="0" tips="CSS动画" uid="0" js="李胜运"><i>15</i></a><a class="grey" did="1550" yes="0" no="1" stat="0" tips="CSS其它属性" uid="0" js="李胜运"><i>16</i></a><a class="grey" did="1551" yes="0" no="1" stat="0" tips="bootstrap" uid="0" js="李胜运"><i>17</i></a><a class="grey" did="1552" yes="0" no="1" stat="0" tips="活力广州首页开发" uid="0" js="李胜运"><i>18</i></a><a class="grey" did="1553" yes="0" no="1" stat="0" tips="映纷视觉响应式版开发" uid="0" js="李胜运"><i>19</i></a><a class="grey" did="1554" yes="0" no="1" stat="0" tips="创想家盛典首页" uid="0" js="李胜运"><i>20</i></a><a class="grey" did="1555" yes="0" no="1" stat="0" tips="HTML基础考试" uid="0" js="李胜运"><i>21</i></a><em class="refreshbut"></em></div><div class="class" on="" jd="授课期" ct="1" day="31" tips="JS原生+JQ" cid="45" style="display: none;"><a class="grey" did="1556" yes="0" no="1" stat="0" tips="JS介绍、alert语句、onclick事件等基础语法" uid="0" js=""><i>1</i></a><a class="grey" did="1557" yes="0" no="1" stat="0" tips="分支语句" uid="0" js=""><i>2</i></a><a class="grey" did="1558" yes="0" no="1" stat="0" tips="循环语句" uid="0" js=""><i>3</i></a><a class="grey" did="1559" yes="0" no="1" stat="0" tips="数组及冒泡算法" uid="0" js=""><i>4</i></a><a class="grey" did="1560" yes="0" no="1" stat="0" tips="二维数组、string、计时器、Date" uid="0" js=""><i>5</i></a><a class="grey" did="1561" yes="0" no="1" stat="0" tips="函数" uid="0" js=""><i>6</i></a><a class="grey" did="1562" yes="0" no="1" stat="0" tips="选字游戏、mac版时钟、无间断滚动等动画" uid="0" js=""><i>7</i></a><a class="grey" did="1563" yes="0" no="1" stat="0" tips="tween.js库、tween.js版大图滚动、tween.js导航滚动" uid="0" js=""><i>8</i></a><a class="grey" did="1564" yes="0" no="1" stat="0" tips="无间断版滚动、中国设计网站、一号店专项动画等常见动画" uid="0" js=""><i>9</i></a><a class="grey" did="1565" yes="0" no="1" stat="0" tips="DOM常用节点方式" uid="0" js=""><i>10</i></a><a class="grey" did="1566" yes="0" no="1" stat="0" tips="滚动偏移、综合案例、瀑布流" uid="0" js=""><i>11</i></a><a class="grey" did="1567" yes="0" no="1" stat="0" tips="image对象、获取计算后样式、锅打灰太狼" uid="0" js=""><i>12</i></a><a class="grey" did="1568" yes="0" no="1" stat="0" tips="DOM的综合练习及讲解" uid="0" js=""><i>13</i></a><a class="grey" did="1569" yes="0" no="1" stat="0" tips="DOM浏览器对象" uid="0" js=""><i>14</i></a><a class="grey" did="1570" yes="0" no="1" stat="0" tips="鼠标事件、键盘事件、表单事件、事件对象" uid="0" js=""><i>15</i></a><a class="grey" did="1571" yes="0" no="1" stat="0" tips="放大镜、滚轮事件、回调函数、自定义滚动条、论坛图片" uid="0" js=""><i>16</i></a><a class="grey" did="1572" yes="0" no="1" stat="0" tips="矩形碰撞检测、飞扬的小鸟DOM游戏开发" uid="0" js=""><i>17</i></a><a class="grey" did="1573" yes="0" no="1" stat="0" tips="cookie与本地存储" uid="0" js=""><i>18</i></a><a class="grey" did="1574" yes="0" no="1" stat="0" tips="触屏事件、设备事件、touch.js手势库、swiper.js库的使用" uid="0" js=""><i>19</i></a><a class="grey" did="1575" yes="0" no="1" stat="0" tips="跨平台贪吃蛇游戏" uid="0" js=""><i>20</i></a><a class="grey" did="1576" yes="0" no="1" stat="0" tips="正则表达式中的元字符号、方括号、正则的方法、量词" uid="0" js=""><i>21</i></a><a class="grey" did="1577" yes="0" no="1" stat="0" tips="找qq号、兼容版的获取class、过滤标签、获取IP等级" uid="0" js=""><i>22</i></a><a class="grey" did="1578" yes="0" no="1" stat="0" tips="jquery选择器、jquery-DOM操作、jquery动画的实现" uid="0" js=""><i>23</i></a><a class="grey" did="1579" yes="0" no="1" stat="0" tips="jquery中的事件绑定及事件机制" uid="0" js=""><i>24</i></a><a class="grey" did="1580" yes="0" no="1" stat="0" tips="jquery方法插件、jquery效果插件及封装" uid="0" js=""><i>25</i></a><a class="grey" did="1581" yes="0" no="1" stat="0" tips="zepto.js 常用方法的使用" uid="0" js=""><i>26</i></a><a class="grey" did="1582" yes="0" no="1" stat="0" tips="实战项目--响应式编程课时1" uid="0" js=""><i>27</i></a><a class="grey" did="1583" yes="0" no="1" stat="0" tips="实战项目--响应式编程课时2" uid="0" js=""><i>28</i></a><a class="grey" did="1584" yes="0" no="1" stat="0" tips="实战项目--响应式编程课时3" uid="0" js=""><i>29</i></a><a class="grey" did="1585" yes="0" no="1" stat="0" tips="实战项目--响应式编程课时4" uid="0" js=""><i>30</i></a><a class="grey" did="1586" yes="0" no="1" stat="0" tips="JS原生及JQuuery阶段考试" uid="0" js=""><i>31</i></a><em class="refreshbut"></em></div><div class="class" on="" jd="授课期" ct="1" day="8" tips="JS面向对象" cid="46" style="display: none;"><a class="grey" did="1587" yes="0" no="1" stat="0" tips="面向对象基础" uid="0" js=""><i>1</i></a><a class="grey" did="1588" yes="0" no="1" stat="0" tips="仿写jquery" uid="0" js=""><i>2</i></a><a class="grey" did="1589" yes="0" no="1" stat="0" tips="canvas基础" uid="0" js=""><i>3</i></a><a class="grey" did="1590" yes="0" no="1" stat="0" tips="canvas动画" uid="0" js=""><i>4</i></a><a class="grey" did="1591" yes="0" no="1" stat="0" tips="canvas游戏开发-贪吃蛇（面向对象）、Tiled地图编辑器" uid="0" js=""><i>5</i></a><a class="grey" did="1592" yes="0" no="1" stat="0" tips="canvas进阶-canvas图像处理、获取图像区域" uid="0" js=""><i>6</i></a><a class="grey" did="1593" yes="0" no="1" stat="0" tips="canvas游戏开发-微信打飞机" uid="0" js=""><i>7</i></a><a class="grey" did="1594" yes="0" no="1" stat="0" tips="JS面向对象、canvas考试" uid="0" js=""><i>8</i></a><em class="refreshbut"></em></div><div class="class" on="" jd="授课期" ct="1" day="14" tips="后台开发及微信开发基础" cid="47" style="display: none;"><a class="grey" did="1595" yes="0" no="1" stat="0" tips="php环境搭建、变量、数据类型、语句、操作符" uid="0" js=""><i>1</i></a><a class="grey" did="1596" yes="0" no="1" stat="0" tips="php的函数、数组、字符串处理" uid="0" js=""><i>2</i></a><a class="grey" did="1597" yes="0" no="1" stat="0" tips="对文件的操作、表单数据的上传和处理" uid="0" js=""><i>3</i></a><a class="grey" did="1598" yes="0" no="1" stat="0" tips="正则表达式和爬虫、mysql基础、sql语言" uid="0" js=""><i>4</i></a><a class="grey" did="1599" yes="0" no="1" stat="0" tips="数据库操作" uid="0" js=""><i>5</i></a><a class="grey" did="1600" yes="0" no="1" stat="0" tips="ajax的意义和方法、json数据的处理" uid="0" js=""><i>6</i></a><a class="grey" did="1601" yes="0" no="1" stat="0" tips="用户登录功能、jQuery下的ajax、留言板功能、瀑布流" uid="0" js=""><i>7</i></a><a class="grey" did="1602" yes="0" no="1" stat="0" tips="原生跨域jsonp、jQuery下的jsonp" uid="0" js=""><i>8</i></a><a class="grey" did="1603" yes="0" no="1" stat="0" tips="微信开发1-搭建微信js-sdk开发环境，微信接口开发、授权" uid="0" js=""><i>9</i></a><a class="grey" did="1604" yes="0" no="1" stat="0" tips="微信开发2-jssdk的基础接口和分享接口、图像处理、音频处理、界面操作、地理位置、智能操作和设备信息" uid="0" js=""><i>10</i></a><a class="grey" did="1605" yes="0" no="1" stat="0" tips="微信开发3-《港囧》找徐峥" uid="0" js=""><i>11</i></a><a class="grey" did="1606" yes="0" no="1" stat="0" tips="微信开发4-《港囧》找徐峥" uid="0" js=""><i>12</i></a><a class="grey" did="1607" yes="0" no="1" stat="0" tips="微信开发5-《港囧》找徐峥" uid="0" js=""><i>13</i></a><a class="grey" did="1608" yes="0" no="1" stat="0" tips="php、微信考试" uid="0" js=""><i>14</i></a><em class="refreshbut"></em></div><div class="class" on="" jd="项目期" ct="2" day="20" tips="综合项目" cid="49" style="display: none;"><a class="grey" did="1609" yes="0" no="1" stat="0" tips="微信端打飞机--项目分析、项目框架的搭建" uid="0" js=""><i>1</i></a><a class="grey" did="1610" yes="0" no="1" stat="0" tips="微信端打飞机--团队项目立项" uid="0" js=""><i>2</i></a><a class="grey" did="1611" yes="0" no="1" stat="0" tips="微信端打飞机--项目编码1" uid="0" js=""><i>3</i></a><a class="grey" did="1612" yes="0" no="1" stat="0" tips="微信端打飞机--项目编码2" uid="0" js=""><i>4</i></a><a class="grey" did="1613" yes="0" no="1" stat="0" tips="微信端打飞机--项目初审" uid="0" js=""><i>5</i></a><a class="grey" did="1614" yes="0" no="1" stat="0" tips="微信端打飞机--项目编码3" uid="0" js=""><i>6</i></a><a class="grey" did="1615" yes="0" no="1" stat="0" tips="微信端打飞机--项目编码4" uid="0" js=""><i>7</i></a><a class="grey" did="1616" yes="0" no="1" stat="0" tips="微信端打飞机--项目二次审核" uid="0" js=""><i>8</i></a><a class="grey" did="1617" yes="0" no="1" stat="0" tips="微信端打飞机--项目终审" uid="0" js=""><i>9</i></a><a class="grey" did="1618" yes="0" no="1" stat="0" tips="微信端打飞机--项目上线" uid="0" js=""><i>10</i></a><a class="grey" did="1619" yes="0" no="1" stat="0" tips="追梦网--项目分析、项目框架搭建" uid="0" js=""><i>11</i></a><a class="grey" did="1620" yes="0" no="1" stat="0" tips="追梦网--团队项目立项" uid="0" js=""><i>12</i></a><a class="grey" did="1621" yes="0" no="1" stat="0" tips="追梦网--项目编码1" uid="0" js=""><i>13</i></a><a class="grey" did="1622" yes="0" no="1" stat="0" tips="追梦网--项目编码2" uid="0" js=""><i>14</i></a><a class="grey" did="1623" yes="0" no="1" stat="0" tips="追梦网--项目初审" uid="0" js=""><i>15</i></a><a class="grey" did="1624" yes="0" no="1" stat="0" tips="追梦网--项目编码3" uid="0" js=""><i>16</i></a><a class="grey" did="1625" yes="0" no="1" stat="0" tips="追梦网--项目编码4" uid="0" js=""><i>17</i></a><a class="grey" did="1626" yes="0" no="1" stat="0" tips="追梦网--项目二次审核" uid="0" js=""><i>18</i></a><a class="grey" did="1627" yes="0" no="1" stat="0" tips="追梦网--项目终审" uid="0" js=""><i>19</i></a><a class="grey" did="1628" yes="0" no="1" stat="0" tips="追梦网--项目上线" uid="0" js=""><i>20</i></a><em class="refreshbut"></em></div><div class="class" on="" jd="项目期" ct="2" day="9" tips="H5高级开发及混合编程" cid="50" style="display: none;"><a class="grey" did="1631" yes="0" no="1" stat="0" tips="nodeJS介绍、commonJS规范、NPM、node模块、http模块" uid="0" js=""><i>1</i></a><a class="grey" did="1632" yes="0" no="1" stat="0" tips="markdown标记语言、gulp自动化工具、git学习" uid="0" js=""><i>2</i></a><a class="grey" did="1633" yes="0" no="1" stat="0" tips="express框架及其常用方法" uid="0" js=""><i>3</i></a><a class="grey" did="1629" yes="0" no="1" stat="0" tips="AngularJs基础1" uid="0" js=""><i>4</i></a><a class="grey" did="1630" yes="0" no="1" stat="0" tips="AngularJs基础2" uid="0" js=""><i>5</i></a><a class="grey" did="1634" yes="0" no="1" stat="0" tips="AngularJs进阶" uid="0" js=""><i>6</i></a><a class="grey" did="1635" yes="0" no="1" stat="0" tips="React环境安装、React Native开发、flexbox布局、jsx语法" uid="0" js=""><i>7</i></a><a class="grey" did="1636" yes="0" no="1" stat="0" tips="React组件的生命周期、复合组件、常用API" uid="0" js=""><i>8</i></a><a class="grey" did="1637" yes="0" no="1" stat="0" tips="html5+的使用、MUI" uid="0" js=""><i>9</i></a><em class="refreshbut"></em></div></div> 
+        
+        <!--隐藏框-->
+         
+         <!--隐藏框结束-->          	
+    </div>
+    <!--课程进度-->
+    
+    <!--课程标志-->
+    <div class="schedulemark">
+        <p><span class="class1"></span>未上课</p>
+        <p><span class="class2"></span>正在上课</p>
+    	<p><span class="class3"></span>已完成</p>
+        <p><span class="class4"></span>已开放课件</p>
+    </div>
+    <!--课程标志-->
+</div>   
+<!--公共进度条部分结束-->
+ <div class="cle"></div>
+<!--中间部分-->
+
+<!--子导航-->
+<div class="subnavigation" style="display: block;">
+    <div class="subnavigation_left">
+        <p>课程：（unit14）CSS进阶属性</p>
+    </div>
+    
+    <div class="subnavigation_right">
+        <ul style="border-bottom-style: none;">
+            <li id="kj" class="on">课件</li>
+            <li id="zy">作业/评价</li>
+            <li id="zsdks">知识点考试</li>
+            <li id="jdks" class="last">阶段考试</li>  
+        </ul>
+    </div>
+</div>    
+<!--子导航-->
+
+<!--课程内容-->
+<div class="content" id="content0" style="display: block;">	
+    <div class="courseware" id="courseware" style="display: block;">    	
+		<!--课件内容-->
+        <div class="courseware_content" id="courseware_content">
+        	<div class="courseware_button" style="display: block;">
+                <a id="full" class="full" onclick="fullscreen(&#39;full&#39;,&#39;exit&#39;,&#39;courseware_content&#39;)" style="">全屏</a>
+                <a id="exit" class="on exit" onclick="exitFullscreen(&#39;full&#39;,&#39;exit&#39;)" style="display: none;">还原</a>
+           </div>
+            <div class="courseware_center"><p><object id="objectCont" type="application/pdf" data="http://saas.jingyingba.com/works/1/project/P_1548_44.pdf" width="100%" height="768" internalinstanceid="7" title="" style="width: 1169px; height: 1080px;"></object></p></div>        
+        </div>
+    <!--课件内容结束-->
+    </div>
+</div>
+<!--课程内容结束-->
+
+<!--作业内容-->
+<div class="content" id="content1" style="display: none;">
+    <div class="courseware" id="courseware1" style="display: block;">
+    	<div class="courseware_content" id="task_cont">
+        	<div class="courseware_button" style="display: none;">
+                <a id="full1" class="full" onclick="fullscreen(&#39;full1&#39;,&#39;exit1&#39;,&#39;task_cont&#39;)" style="display: block;">全屏</a>
+                <a id="exit1" class="on exit" onclick="exitFullscreen(&#39;full1&#39;,&#39;exit1&#39;)" style="display: none;">还原</a>
+            </div>
+            <div class="courseware_center"></div>
+        </div>
+        <div class="clickalike">
+        	<div class="clickalike_left"></div>
+            <div class="clickalike_right">
+            	<span onclick="LamaReqStudentThumbUp();"></span>
+                <p>觉得讲师评语写的好，请点赞支持TA</p>
+            </div>
+        </div>
+    </div> 
+</div>
+<!--作业内容结束-->
+
+<!--知识点考试-->
+<div class="content" id="content2" style="display: none;">
+	<div class="courseware" style="display: block;">
+	<!--<div class="selcourse_top">    	    
+    	<a href="javascript:;">查看考试成绩汇总</a>
+    </div>-->
+    <!--已考知识点-->
+    <div class="forknowledge knowledge" id="knowledge">
+    	<p class="forknowledge_left">已考知识点：</p>
+        <div class="forknowledge_right" style="width: 1039px;"></div>
+    </div>
+    <!--已考知识点结束-->
+    
+    <!--待考知识点-->
+    <div class="forknowledge" id="forknowledge">
+    	<p class="forknowledge_left">待考知识点：</p>
+        <div class="forknowledge_right" style="width: 1039px;"></div>
+    </div>
+    <!--待考知识点结束-->
+    
+    <div class="testPaper" style="display: none;">
+    	<div class="testPaper_top"></div>
+        <div class="cle"></div>  
+        <div class="testPaper_cont">        	
+            <div class="paper_cont"></div>
+        </div>              
+    </div>    
+    </div>
+</div>
+<!--知识点考试结束-->
+<!--阶段考试考试开始-->
+<div class="content" id="content3" style="display: none;">
+	<div class="courseware" style="display: block;">
+
+	<div class="selcourse_top">    	    
+    	<a href="javascript:;">查看考试成绩汇总</a>
+    </div>
+	
+ <!--已考阶段---->
+    <div class="forknowledge" id="beenteststage">
+    	<p class="forknowledge_left">已考阶段：</p>
+        <div class="forknowledge_right" zt="1" style="width: 1039px;"></div>
+    </div>
+<!--已考阶段结束---->
+    
+   <!-- 待考阶段---->
+    <div class="forknowledge" id="forthestage">
+    	<p class="forknowledge_left">待考阶段：</p>
+        <div class="forknowledge_right" zt="0" style="width: 1039px;"></div>
+    </div>
+   <!-- 待考阶段结束---->
+    
+    <div class="testPaper stagetestPaper" style="display: none;">
+    	<div class="testPaper_top"></div>
+        <div class="cle"></div>
+        <div class="testPaper_cont_bei">        	
+            <div class="paper_cont"></div>
+        </div>
+        <div class="seatingchartbei" style="display: none;">
+        	<div class="seatingchartbei_cont"></div>
+        </div>
+    </div>    
+    </div>
+</div>
+<!--阶段考试结束-->
+<!--中间部分结束-->
+<div class="foot">
+	<div class="foottext">才信教育© 2015-2017</div>
+</div>
+<div class="mask" style="display: none;"></div>
+<div class="popups"></div>
+<!--头部弹窗-->
+<!--周报弹窗-->
+<!--<div class="weekly_popup popup_wrap" id="popup_wrap0">
+	<span class="close"></span>
+	<div class="weekly_popup_title popup_title"><span>课程：UI界面通信</span><em>填写/修改周报</em><i>（若与实际授课进度不符，请告知讲师修改）</i></div>
+    <div class="weekly_popup_cont popup_cont">
+  		<div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>        
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>        
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>        
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>        
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>        
+        <div>
+        	<p><span></span><em>B项目【2015.11.23&nbsp;-&nbsp;2015.11.29】期周报</em><i>2015.11.27&nbsp;19:55:45</i></p>
+            <a>查看</a>
+        </div>
+    </div>
+</div>-->
+<!--周报弹窗结束-->
+<!--填写修改周报弹窗-->
+<!--<div class="popup_wrap modify_popup">
+	<span class="modify_popup_close"></span>
+	<div class="popup_title modify_popup_title">C语言（iOS班）【2015-11-23&nbsp;>>&nbsp;2015-11-29】</div>
+    <div class="popup_cont modify_popup_cont">
+    	<form>
+        	<div><p>研发人员</p><input type="text" value=""  /></div>
+            <div><p>项目名称</p><input type="text" value=""  /></div>
+            <div><p>项目简介</p><textarea></textarea></div>
+            <div><p>遇到的问题</p><textarea></textarea></div>
+            <div><p>解决方案</p><textarea></textarea></div>
+            <div><p>研发进度</p><textarea></textarea></div>
+            <div><p>总结</p><textarea></textarea></div>
+            <div><p>个人建议</p><textarea></textarea></div>
+        </form>
+    </div>
+    <div class="modify_popup_bot">
+    	<a class="modify_popup_btn">提交</a>
+    </div>
+</div>-->
+<!--填写修改周报弹窗结束-->
+<!--查看周报弹窗-->
+<!--<div class="popup_wrap seeweekly_popup">
+	<span class="modify_popup_close"></span>
+	<div class="popup_title seeweekly_popup_title">C语言（iOS班）【2015-11-23&nbsp;>>&nbsp;2015-11-29】</div>
+    <div class="popup_cont seeweekly_popup_cont">
+    	<div><p>研发人员</p><span>类的创建方法，成员变量的声明，类方法(+)、成员方法(-)的声明与实现； 类的集成； 方法的调用； 字符串类</span></div>
+        <div><p>项目名称</p><span>二维数组，有点难理解。</span></div>
+        <div><p>项目简介</p><span>类的创建方法，成员变量的声明，类方法(+)、成员方法(-)的声明与实现； 类的集成； 方法的调用； 字符串类类的创建方法，成员变量的声明</span></div>
+        <div><p>遇到的问题</p><span>收获蛮大</span></div>
+        <div><p>解决方案</p><span>好记性不如烂笔头 要多练习多敲代码</span></div>
+        <div><p>研发进度</p><span>希望能讲的知识点更多一点</span></div>
+        <div><p>总结</p><span>希望能讲的知识点更多一点</span></div>
+        <div><p>个人建议</p><span>希望能讲的知识点更多一点</span></div>
+    </div>
+</div>-->
+<!--查看周报弹窗结束-->
+
+<!--讲师测评弹窗-->
+<!--<div class="popup_wrap lecturer_popup" id="popup_wrap1">
+	<span class="close"></span>
+	<div class="popup_title lecturer_popup_title">讲师授课反馈表（授课期）</div>
+    <div class="popup_cont lecturer_popup_cont">
+    	<div class="lecturer_popup_top">
+        	<p>1、此问卷目的，是为了收集对该讲师和授课内容的真切感受，为进一步改进训练方式提供有价值的反馈信息，促进训练整体水平的提高。</p>
+            <p>2、问卷不具姓名，请您认真填写。</p>
+            <p>3、请你结合下述评价项目给讲师评定一个适当的等级，在对应的项目下选择。</p>
+        </div>        
+        <div class="lecturer_popup_bot">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="tile">编号</td>
+                        <td class="tile2">评价指标点</td>
+                        <td class="tile3">评价项目</td>
+                        <td class="tile4">很好</td>
+                        <td class="tile4">好</td>
+                        <td class="tile4">一般</td>
+                        <td class="tile4">差</td>
+                        <td class="tile4">很差</td>
+                    </tr>
+                    <tr>
+                        <td class="tile">1</td>
+                        <td class="tile2" rowspan="4">态度</td>
+                        <td class="tile3">认真阅读学员周报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">2</td>
+                        <td class="tile3">准备充分，讲授认真，精心组织教学，对课堂时间安排合理</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">3</td>
+                        <td class="tile3">工作严谨，对学员严格要求，认真做好考勤。</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">4</td>
+                        <td class="tile3">经常进班，关心学生学习和生活，注意与学员沟通交流，耐心答疑，帮助解决问题。认真阅读学员周报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">5</td>
+                        <td class="tile2" rowspan="2">素养</td>
+                        <td class="tile3">经常进班，关心学生学习和生活，注意读学员周报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">6</td>
+                        <td class="tile3">经常进班，关心学生学习和生活，注报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">7</td>
+                        <td class="tile2">关于优化本授课内容的建议</td>
+                        <td class="tile5" colspan="6"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">8</td>
+                        <td class="tile2">关于优化本授课内容的建议</td>
+                        <td class="tile5" colspan="6"><textarea></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="lecturer_popup_btn">
+    	<a>提交</a>
+    </div>
+</div>-->
+<!--讲师测评弹窗结束-->
+
+<!--职规师测评弹窗-->
+<!--<div class="popup_wrap lecturer_popup" id="popup_wrap2">
+	<span class="close"></span>
+	<div class="popup_title lecturer_popup_title">讲师授课反馈表（授课期）</div>
+    <div class="popup_cont lecturer_popup_cont">
+    	<div class="lecturer_popup_top">
+        	<p>1、此问卷目的，是为了收集对该讲师和授课内容的真切感受，为进一步改进训练方式提供有价值的反馈信息，促进训练整体水平的提高。</p>
+            <p>2、问卷不具姓名，请您认真填写。</p>
+            <p>3、请你结合下述评价项目给讲师评定一个适当的等级，在对应的项目下选择。</p>
+        </div>        
+        <div class="lecturer_popup_bot">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="tile">编号</td>
+                        <td class="tile2">评价指标点</td>
+                        <td class="tile3">评价项目</td>
+                        <td class="tile4">很好</td>
+                        <td class="tile4">好</td>
+                        <td class="tile4">一般</td>
+                        <td class="tile4">差</td>
+                        <td class="tile4">很差</td>
+                    </tr>
+                    <tr>
+                        <td class="tile">1</td>
+                        <td class="tile2" rowspan="4">态度</td>
+                        <td class="tile3">认真阅读学员周报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">2</td>
+                        <td class="tile3">准备充分，讲授认真，精心组织教学，对课堂时间安排合理</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">3</td>
+                        <td class="tile3">工作严谨，对学员严格要求，认真做好考勤。</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">4</td>
+                        <td class="tile3">经常进班，关心学生学习和生活，注意与学员沟通交流，耐心答疑，帮助解决问题。认真阅读学员周报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">5</td>
+                        <td class="tile2" rowspan="2">素养</td>
+                        <td class="tile3">经常进班，关心学生学习和生活，注意读学员周报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">6</td>
+                        <td class="tile3">经常进班，关心学生学习和生活，注报，对于学员周报中提出的共性问题给与反馈</td>
+                        <td class="tile4">5<span></span></td>
+                        <td class="tile4">4<span></span></td>
+                        <td class="tile4">3<span></span></td>
+                        <td class="tile4">2<span></span></td>
+                        <td class="tile4">1<span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">7</td>
+                        <td class="tile2">关于优化本授课内容的建议</td>
+                        <td class="tile5" colspan="6"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="tile">8</td>
+                        <td class="tile2">关于优化本授课内容的建议</td>
+                        <td class="tile5" colspan="6"><textarea></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="lecturer_popup_btn">
+    	<a>提交</a>
+    </div>
+</div>-->
+<!--职规师测评弹窗-->
+
+<!--个人信息弹窗-->
+<!--<div class="popup_wrap information_popup" id="popup_wrap3">
+	<span class="close"></span>
+	<div class="popup_title information_popup_title">个人信息</div>
+    <div class="popup_cont information_popup_cont">
+    	<div class="information_popup_cont_positon">
+            <a class="standard">查看编程规范</a>
+            <a class="manual">查看学员手册</a>
+        </div>
+    	
+    	<ul>
+        	<li><span>姓名：</span><p>黄晓明</p></li>
+            <li><span>性别：</span><p>男</p></li>
+            <li><span>手机号：</span><p>15812345678</p></li>
+            <li><span>代缴学费：</span><p>已完结</p></li>
+        </ul>
+        <ul class="discipline">
+            <li><span>纪律：</span><p>100</p><em>（纪律80分（含）以上合格，60-69警告，60分以下不及格）</em></li>
+            <li><span>考勤：</span><p>100</p><em>（考勤80分（含）以上合格，60-79警告，60分以下不及格）</em></li>
+        </ul>
+        <div class="leave"><span>请假记录：</span><p>请假【4次】，共【60小时】</p></div>
+        <table>
+        	<tbody>
+            	<tr class="record_title">
+                	<td class="record_time">记录时间</td>
+                    <td class="disc_type">违纪类型</td>
+                    <td class="disc_time">违纪时间</td>
+                    <td class="disc_reasons">违纪原因</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频看无关视频看无关视频看无关视频看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+                <tr>
+                	<td class="record_time">2015.07.07 18:30:49</td>
+                    <td class="disc_type">纪律</td>
+                    <td class="disc_time">2015.07.07 18:30:49</td>
+                    <td class="disc_reasons">看小说、看无关视频，第一次扣5分 (上午下课期间，看视频“奔跑吧，兄弟”。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>-->
+<!--个人信息弹窗-->
+
+<!--学员手册-->
+<!--<div class="popup_wrap manual_popup">
+	<span class="manual_popup_close"></span>
+    <div class="popup_title manual_popup_title">学员手册</div>
+    <div class="popup_cont manual_popup_cont"></div>
+</div>-->
+<!--学员手册结束-->
+<!--编程规范-->
+<!--<div class="popup_wrap standard_popup">
+	<span class="standard_popup_close"></span>
+    <div class="popup_title standard_popup_title">编程规范</div>
+    <div class="popup_cont standard_popup_cont"></div>
+</div>-->
+<!--编程规范结束-->
+<!--头部弹窗结束-->
+
+<!--成绩汇总弹窗-->
+<!--<div class="resultsummary">
+	<span class="closebutton close"></span>
+	<div class="resultsummary_title">课程（day8）界面通信</div>
+	<div class="resultsummary_cont">
+    	<div class="resultsummary_cont_til">成绩排名趋势图<em class="one"></em><span>第一次成绩</span><em class="two"></em><span>第二次成绩</span></div>
+        <div class="chart">
+            <div class="vertical"><p>100</p><p>80</p><p>60</p><p>40</p><p>20</p><p>0</p></div>
+            <div class="container">
+                <div class="chart-wrapper">
+                    <canvas id="sales-volume-chart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="slider"><div class="gun left"></div><div class="gun right"></div></div>
+        </div>
+        <div class="details">
+            <div class="detailsTitle"><p>全班学生知识点考试成绩详情</p><em class="gao"></em><span>成绩优良</span><em class="di"></em><span>成绩较差</span></div>
+                <div class="detailsMain">
+                    <div class="detailsLeft">
+                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th>科目</th>
+                            </tr>
+                            <tr>
+                                <td>第一次成绩</td>
+                            </tr>
+                            <tr>
+                                <td>班级排名</td>
+                            </tr>
+                            <tr>
+                                <td>最高分</td>
+                            </tr>
+                            <tr>
+                                <td>最低分</td>
+                            </tr>
+                            <tr>
+                                <td>第二次成绩</td>
+                            </tr>
+                            <tr>
+                                <td>班级排名</td>
+                            </tr>
+                            <tr>
+                                <td>最高分</td>
+                            </tr>
+                            <tr>
+                                <td>最低分</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detailsRight">
+                        <table border="0" width="2200" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th>c语言课程1</th>
+                                <th>c语言课程2</th>
+                                <th>c语言课程3</th>
+                                <th>c语言课程4</th>
+                                <th>c语言课程5</th>
+                                <th>c语言课程6</th>
+                                <th>c语言课程7</th>
+                                <th>c语言课程8</th>
+                                <th>c语言课程9</th>
+                                <th>c语言课程10</th>
+                                <th>c语言课程11</th>
+                                <th>c语言课程12</th>
+                                <th>c语言课程13</th>
+                                <th>c语言课程14</th>
+                                <th>c语言课程15</th>
+                                <th>c语言课程16</th>
+                                <th>c语言课程17</th>
+                                <th>c语言课程18</th>
+                                <th>c语言课程19</th>
+                                <th>c语言课程20</th>
+                                <th>c语言课程21</th>
+                                <th>c语言课程22</th>
+                                <th>c语言课程23</th>
+                                <th>c语言课程24</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td class="gao">9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td class="di">20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+	</div>
+</div>-->
+<!--成绩汇总弹窗-->
+
+
+<div id="cli_dialog_div"></div></body></html>
